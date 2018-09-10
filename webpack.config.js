@@ -99,7 +99,13 @@ if (isDev) {
 		},
 		contentBase: "./dist", //本地服务器所加载的页面所在的目录
 		historyApiFallback: true, // 任意的 404 响应都替代为 index.html
-        hot: true // 启用 webpack 的模块热替换特
+		hot: true, // 启用 webpack 的模块热替换特
+		proxy: {
+			"/UCG_OSS": {    //需要代理的路径
+			  target: "http://192.168.13.220:8090",  //需要代理的域名
+			  pathRewrite: {'^/' : ''}
+			}
+		  }
 	}
 	//	添加热加载插件
 	config.plugins.push(

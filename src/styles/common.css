@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+body,
+html {
+  position: relative;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+html {
+  font-size: 54.6875%;
+}
+input,
+textarea {
+  font-family: Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif !important;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 54.6875%;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375%;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 62.5%;
+  }
+}
